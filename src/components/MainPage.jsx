@@ -1,7 +1,8 @@
 import React from 'react'
 
+
 export const MainPage = () => {
   return (
-    <div>MainPagqe</div>
+    <div>MainPage</div>
   )
 }
