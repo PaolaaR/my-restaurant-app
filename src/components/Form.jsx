@@ -68,7 +68,7 @@ export const Form = () => {
     <>
       <input
         type="string"
-        placeholder="Name"
+        placeholder="Nombre"
         value={name}
         onChange={(event) => setName(event.target.value)}
       />
@@ -80,7 +80,7 @@ export const Form = () => {
       />
       <input
         type="string"
-        placeholder="Phone"
+        placeholder="teléfono"
         value={phone}
         onChange={(event) => setPhone(event.target.value)}
       />
@@ -96,7 +96,7 @@ export const Form = () => {
       <Button variant="success" onClick={addClient}>
         Add
       </Button>
-      <Table striped bordered hover>
+      <Table striped bordered hover className='table'>
         <thead>
           <tr>
             <th>Name</th>
