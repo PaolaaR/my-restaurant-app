@@ -7,9 +7,9 @@ import logo from '../assets/logo.jpg';
 
 export const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="custom-navbar">
       <Container>
-        <img src={logo} alt={logo} style={{ width: '50px', height: '50px' }} />
+        <img className='logo' src={logo} alt={logo} />
         <Navbar.Brand as = {Link}to="/my-restaurant-app">EMPANADOS</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -19,7 +19,7 @@ export const Footer = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <i className="fab fa-facebook fa-2x"></i>
+              <i className="fa fa-facebook fa-2x"></i>
             </a>
 
             <a
@@ -27,14 +27,14 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer" 
             >
-              <i className="fab fa-instagram fa-2x"></i>
+              <i className="fa fa-instagram fa-2x"></i>
             </a>
             <a
               href="https://www.twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-twitter fa-2x"></i>
+              <i className="fa fa-twitter fa-2x"></i>
             </a>
           </div>
         </div>
