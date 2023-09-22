@@ -35,7 +35,7 @@ export const ContactForm = () => {
     };
 
     return (
-        <div>
+        <div className='contacto'>
         {formSubmitted ? (
             <div>
                 <h2>¡Gracias por tu mensaje!</h2>
@@ -43,7 +43,7 @@ export const ContactForm = () => {
             </div>
         ) : (
         <>
-            <h2>Contacto</h2>
+            <h2>Contáctanos</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Nombre:</label>

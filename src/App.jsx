@@ -2,7 +2,6 @@ import { Header } from "./components/Header"
 import { Footer } from "./components/Footer.jsx"
 import { MainPage } from "./components/MainPage"
 import { Form } from "./components/Form"
-import './App.css'
 import ContactForm from "./components/ContactForm"
 
 
