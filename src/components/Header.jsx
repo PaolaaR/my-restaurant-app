@@ -3,26 +3,26 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.jpg';
 
 export const Header = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand as = {Link}to="/my-restaurant-app">React-Bootstrap</Navbar.Brand>
+        <img src={logo} alt={logo} style={{ width: '50px', height: '50px' }} />
+        <Navbar.Brand as = {Link}to="/my-restaurant-app">EMPANADOS</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link as= {Link} to="/my-restaurant-app" >Home</Nav.Link>
-            <Nav.Link as={Link} to="/my-restaurant-app">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+          <Nav.Link as= {Link} to="/my-restaurant-app" >¡Pide Delivery!</Nav.Link>
+            <Nav.Link as={Link} to="/my-restaurant-app">Menú y promociones</Nav.Link>
+            <NavDropdown title="Quiénes Somos" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Historia</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2"> Equipo
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Sucursales</NavDropdown.Item>  
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="#action/3.4">Contacto
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
