@@ -9,7 +9,7 @@ import setHours from "date-fns/setHours";
 import setMinutes from "date-fns/setMinutes";
 
 
-export const Form = () => {
+export const Booking = () => {
   const restaurantformCollectionRef = collection(db, "restaurantform");
   const [clients, setClients] = useState([]);
   const [name, setName] = useState("");
@@ -66,6 +66,7 @@ export const Form = () => {
 
   return (
     <>
+      <h1>Reserva tu mesa</h1>
       <input
         type="string"
         placeholder="Nombre"
@@ -126,5 +127,3 @@ export const Form = () => {
     </>
   );
 };
-
-export default Form;

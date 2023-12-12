@@ -43,7 +43,7 @@ export const ContactForm = () => {
             </div>
         ) : (
         <>
-            <h2>Contáctanos</h2>
+            <h1>Contáctanos</h1>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Nombre:</label>

@@ -14,21 +14,17 @@ export const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link as= {Link} to="/my-restaurant-app" >¡Pide Delivery!</Nav.Link>
-            <Nav.Link as={Link} to="/my-restaurant-app">Menú y promociones</Nav.Link>
-            <NavDropdown title="Quiénes Somos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Historia</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2"> Equipo
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Sucursales</NavDropdown.Item>  
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Contacto
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav.Link as= {Link} to="/my-restaurant-app/delivery" >¡Pide Delivery!</Nav.Link>
+            <Nav.Link as={Link} to="/my-restaurant-app/menu">Menú y promociones</Nav.Link>
+            <Nav.Link as={Link} to="/my-restaurant-app/reserva">Reserva tu mesa</Nav.Link>
+            <Nav.Link as={Link} to="/my-restaurant-app/contacto">¡Contáctanos!</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
+    <h1>Pide Tus Empanadas Caseras Favoritas😋</h1>
+
     </Navbar>
+    
   );
 }
 

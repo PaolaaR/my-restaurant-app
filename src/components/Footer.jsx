@@ -1,11 +1,15 @@
 import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 export const Footer = () => {
   return (
     <footer className="bg-dark text-light text-center py-3">
-      <div className="container">
+       <Container>
+      <Row className="d-flex align-items-center justify-content-center">
+      
+      <Col md={6}>
         <p>&copy; {new Date().getFullYear()} EMPANADOS </p>
         <p> Geronimo de Alderete 627, La Florida</p>
         <p> Teléfono: +56 9 1234 5678</p>
@@ -13,7 +17,6 @@ export const Footer = () => {
         <p> Email:empana2@gmail.com</p>
         <p> Síguenos en nuestras redes sociales</p>
         <div>
-          <div>
             <a
               href="https://www.facebook.com/"
               target="_blank" 
@@ -37,8 +40,9 @@ export const Footer = () => {
               <i className="fa fa-twitter fa-2x"></i>
             </a>
           </div>
-        </div>
+          </Col>
         
+          <Col md={6}>
         <p>Encuéntranos en Google Maps</p>
 
         <div id="map-container">
@@ -52,7 +56,9 @@ export const Footer = () => {
             allowFullScreen
           ></iframe>
         </div>
-      </div>
+        </Col>
+        </Row>
+        </Container>
     </footer>
   );
 };
